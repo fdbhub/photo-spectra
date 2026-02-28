@@ -1,0 +1,360 @@
+.privacyPage {
+  min-height: 100vh;
+}
+
+.pageHeader {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  padding: 4rem 0 3rem;
+  color: white;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.lastUpdated {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.pageSubtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+.mainContent {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.section {
+  background: var(--ifm-background-surface-color);
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-color: var(--ifm-color-primary-light);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionIcon {
+  font-size: 3rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ifm-color-primary);
+}
+
+.sectionContent {
+  padding-left: 4.5rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 0.75rem;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.complianceSection {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 16px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.complianceTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-primary);
+}
+
+.complianceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.complianceCard {
+  text-align: center;
+  padding: 2rem;
+  background: var(--ifm-background-color);
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
+}
+
+.complianceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-success);
+}
+
+.complianceIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.complianceCard h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.complianceCard p {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.summarySection {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 16px;
+}
+
+.summaryTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.summaryContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--ifm-background-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.summaryItem:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summaryItem:last-child {
+  margin-bottom: 0;
+}
+
+.summaryNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.summaryItem p {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-800);
+  padding-top: 0.25rem;
+}
+
+.contactSection {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 16px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.contactTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.contactDescription {
+  font-size: 1.125rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 996px) {
+  .pageTitle {
+    font-size: 2.75rem;
+  }
+
+  .pageSubtitle {
+    font-size: 1.125rem;
+  }
+
+  .section {
+    padding: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .sectionContent {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  .complianceTitle {
+    font-size: 2rem;
+  }
+
+  .summaryTitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageHeader {
+    padding: 3rem 0 2rem;
+  }
+
+  .pageTitle {
+    font-size: 2.25rem;
+  }
+
+  .pageSubtitle {
+    font-size: 1rem;
+  }
+
+  .mainContent {
+    padding: 2.5rem 0;
+  }
+
+  .section {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .sectionIcon {
+    font-size: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.375rem;
+  }
+
+  .sectionContent {
+    padding-left: 0;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .complianceSection {
+    padding: 2rem 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .complianceTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .complianceGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .complianceCard {
+    padding: 1.5rem;
+  }
+
+  .summarySection {
+    padding: 2rem 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .summaryTitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .summaryItem {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .summaryNumber {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .summaryItem p {
+    font-size: 1rem;
+  }
+
+  .contactSection {
+    padding: 2rem 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .contactTitle {
+    font-size: 1.5rem;
+  }
+
+  .contactDescription {
+    font-size: 1rem;
+  }
+}
