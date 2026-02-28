@@ -16,7 +16,7 @@ const config: Config = {
 
   organizationName: 'fdbhub',
   projectName: 'photo-spectra',
-
+  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
 
   i18n: {
