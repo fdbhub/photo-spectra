@@ -12,7 +12,7 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
   url: 'https://fdbhub.github.io/',
-  baseUrl: '/photo-spectra/',
+  baseUrl: '/',
 
   organizationName: 'fdbhub',
   projectName: 'photo-spectra',
