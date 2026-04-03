@@ -65,9 +65,9 @@ function HeroSection() {
           </Heading>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <p className={styles.heroDescription}>
-            Securely manage and sync your photos with PhotoPrism. Take control
-            of your memories with local access, intelligent deduplication, and
-            seamless multi-server support.
+            Access and manage your self-hosted photo library with ease. Connect
+            securely to your PhotoPrism server and take full control of your
+            photos—anytime, anywhere.
           </p>
           <div className={styles.heroButtons}>
             <Link

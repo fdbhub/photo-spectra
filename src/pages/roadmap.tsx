@@ -12,6 +12,7 @@ interface Phase {
   phase: string;
   title: string;
   status: "completed" | "in-progress" | "planned";
+  version?: string;
   items: RoadmapItem[];
 }
 
@@ -20,6 +21,7 @@ const roadmapPhases: Phase[] = [
     phase: "Phase 1",
     title: "Core Functionality",
     status: "completed",
+    version: "v1.0.0",
     items: [
       {
         title: "Authentication & Connection",
@@ -55,7 +57,8 @@ const roadmapPhases: Phase[] = [
   {
     phase: "Phase 2",
     title: "Enhanced User Experience",
-    status: "in-progress",
+    status: "completed",
+    version: "v1.2.2",
     items: [
       {
         title: "Performance",
@@ -82,9 +85,11 @@ const roadmapPhases: Phase[] = [
       {
         title: "Organization Tools",
         items: [
-          "Photos filter by favorites, private, reviewed",
-          "Smart Collections: Auto-organize photos by date, location, or type",
-          "Search Functionality: Search photos by metadata, date, or location",
+          "Places, people and labels support",
+          "WebDav upload subdirectories formats (by date, by album)",
+          "Library functionalities",
+          "Share photos",
+          "Collections filters and editing",
         ],
       },
     ],
@@ -97,9 +102,9 @@ const roadmapPhases: Phase[] = [
       {
         title: "Editing & Export",
         items: [
+          "Search Functionality: Search photos by metadata, date, or location",
           "Photo Editing: Basic editing tools (crop, rotate, filters)",
           "Slideshow Creator: Create slideshows from albums",
-          "Export Options: Export photos with custom settings",
         ],
       },
     ],
@@ -122,7 +127,7 @@ function StatusBadge({ status }: { status: Phase["status"] }) {
   );
 }
 
-function PhaseSection({ phase, title, status, items }: Phase) {
+function PhaseSection({ phase, title, status, version, items }: Phase) {
   return (
     <div className={styles.phaseSection}>
       <div className={styles.phaseHeader}>
@@ -133,6 +138,11 @@ function PhaseSection({ phase, title, status, items }: Phase) {
           </Heading>
         </div>
         <StatusBadge status={status} />
+        {version && (
+          <span className={`${styles.statusBadge} ${styles.statusCompleted}`}>
+            {version}
+          </span>
+        )}
       </div>
 
       <div className={styles.phaseContent}>

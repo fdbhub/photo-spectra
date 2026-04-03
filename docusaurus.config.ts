@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'PhotoSpectra',
-  tagline: 'Your Private Photo Library Manager',
+  tagline: 'Manage photos with PhotoPrism',
   favicon: 'img/icon.png',
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
