@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Getting Started
 
-Welcome to **PhotoSpectra** - your private photo library manager! This guide will help you get started with the app.
+Welcome to **PhotoSpectra** - Manage photos with PhotoPrism! This guide will help you get started with the app.
 
 ## What is PhotoSpectra?
 

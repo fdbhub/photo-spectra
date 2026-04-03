@@ -2,91 +2,61 @@
 sidebar_position: 5
 ---
 
-import LocalPhotosImage from './img/local.png';
+import LocalPhotosImage from './img/library.png';
 import SyncPhotosImage from './img/sync.png';
 
-# Local photos
+# Library
 
-## Explore Your Photos
-
-Once connected, you can:
-
-- Browse your local photos organized by albums
-- View sync status for each photo
-- Manually sync individual photos or entire albums
-- Browse remote albums on your PhotoPrism server
+The **Library** tab shows all photos on your device in a grid view.
 
 <img src={LocalPhotosImage} alt="Local Photos Screen" style={{width: '300px', height: 'auto'}} />
 
-## Basic Usage
+## Filters
 
-### Syncing Photos
+Tap the **filter icon** (top right) to narrow down what's shown:
 
-#### Manual Sync
+| Filter | Options |
+|--------|---------|
+| **Media** | All · Photos · Videos |
+| **Sync** | All · Synced · Pending |
+| **Hash** | All · Hashed · Unhashed |
 
-1. Go to the **Local** tab
-2. Select photos you want to sync
-3. Tap the **Sync** button
-4. Wait for upload to complete
+Tap **Reset filters** to clear all active filters.
 
-<img src={SyncPhotosImage} alt="Sync Photos Screen" style={{width: '300px', height: 'auto'}} />
+## Selection Mode
 
-## Understanding Sync Status
+Long press any photo (or tap the **checkmark icon**) to enter selection mode:
 
-PhotoSpectra uses indicators to show sync status:
-- **Total**: Total number of photos
-- **Hashed**: Number of photos that have been hashed
-- **Synchronized**: Photo already exists on server
-- **Pending**: Photo not yet synced to server
+- Tap photos to select/deselect them
+- Tap the **grid icon** to select all pending photos at once
+- Tap **Upload (N)** to sync only the selected photos
+- Tap the **X icon** to exit selection mode
 
-## Tips for Best Experience
+## Syncing Photos
 
-### Performance
+<img src={SyncPhotosImage} alt="Sync Modal" style={{width: '300px', height: 'auto'}} />
 
-- **WiFi Recommended**: Sync large photo libraries over WiFi to save mobile data
+Tap the **top left icon** to open the Sync panel. It shows:
 
-### Privacy
+- **Total** — all photos loaded
+- **Hashed** — photos with SHA1 computed (used for deduplication)
+- **Synced** — already on your PhotoPrism server
+- **Pending** — not yet uploaded
 
-- **Local First**: Photos stay on your device until you sync them
-- **Secure Storage**: Credentials stored using platform-native secure storage
-- **No Third Parties**: Direct connection between your device and your server
+From this panel you can **start hashing** (computes SHA1 for all local photos and checks the server for duplicates) or cancel an ongoing operation.
 
+To upload, tap the **cloud icon** — this uploads all pending photos via WebDAV.
 
-## Troubleshooting
+:::tip
+Use **WiFi** when syncing large libraries to avoid mobile data usage.
+:::
 
-### Sync Problems
+## Photo Badges
 
-If photos aren't syncing:
+Each tile shows small indicators:
 
-1. Check internet connection
-2. Verify sufficient storage on server
-3. Check photo format is supported
-4. Review error messages in app
-5. Restart the app and try again.
+- **Sync badge** — bottom left: shows if the photo is synced or pending
+- **Video duration** — bottom right: shown on video files
+- **Live photo icon** — top right: shown on Live Photos
+- **GIF icon** — top right: shown on animated GIFs
 
-### Performance Issues
-
-If the app is slow:
-
-1. Use filters to narrow down photo list
-2. Restart the app and try again.
-
-## Next Steps
-
-Now that you're set up, explore more features:
-
-- [View all Features](/features)
-- [Check the Roadmap](/roadmap)
-- [Read Privacy Policy](/privacy)
-- Browse the mobile app source code in the `mobile/` folder
-
-## Getting Help
-
-Need assistance?
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/fdbhub/photo-spectra/issues)
-- **Documentation**: Browse other docs in this section
-
----
-
-Ready to take control of your photo library? Start syncing with PhotoSpectra today!
