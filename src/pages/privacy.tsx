@@ -17,9 +17,10 @@ const privacySections: Section[] = [
       "PhotoSpectra is designed with privacy as a core principle:",
       "- Your photos stay on your device until you choose to sync",
       "- We don't collect or store your personal data",
-      "- No analytics, tracking, or advertising",
+      "- No usage analytics or behavioral tracking",
+      "- Ads are non-personalized — we request non-personalized ads only, so no ad targeting profile is built about you",
+      "- You can remove ads entirely with in-app purchase",
       "- You control which servers you connect to",
-      "- All data transmission is encrypted",
     ],
   },
   {
@@ -30,10 +31,32 @@ const privacySections: Section[] = [
       "- Your photos or videos (except when you explicitly sync to your PhotoPrism server)",
       "- Your personal information",
       "- Usage analytics or telemetry",
-      "- Device identifiers for tracking",
       "- Location data (except what's already in your photo metadata)",
       "- Contacts or other personal data",
-      "- Advertising identifiers",
+      "- Personalized advertising identifiers or behavioral profiles",
+    ],
+  },
+  {
+    icon: "📢",
+    title: "Advertising",
+    content: [
+      "The free version of PhotoSpectra displays banner ads served by Google AdMob.",
+      "- Non-Personalized Ads Only: We explicitly request non-personalized ads. AdMob will not build a behavioral profile or use your data for ad targeting.",
+      "- What AdMob May Collect: Even for non-personalized ads, Google AdMob may collect certain technical data such as device type, OS version, and IP address for fraud prevention, frequency capping, and aggregate reporting. This data is processed by Google under their privacy policy.",
+      "- No Ad Identifier for Targeting: We do not use your Advertising ID (IDFA/GAID) to target you with personalized ads.",
+      "- Remove Ads: You can remove all ads by subscribing to the 'Premium' plan within the app. While your subscription is active, no ad-related data is collected.",
+      "For more information on how Google handles data in non-personalized ads, please review Google's Privacy Policy at https://policies.google.com/privacy.",
+    ],
+  },
+  {
+    icon: "🛒",
+    title: "In-App Subscriptions",
+    content: [
+      "PhotoSpectra offers a subscription to remove ads while it is active.",
+      "- Subscription Processing: All subscriptions are processed by Apple (App Store) or Google (Google Play). We do not collect or store your payment information.",
+      "- Cancellation: You can cancel your subscription at any time through your App Store or Google Play account settings. Ads will resume once the subscription period ends.",
+      "- Restore: You can restore an active subscription at any time through the app.",
+      "For details on how Apple or Google handle your payment data, please review their respective privacy policies.",
     ],
   },
   {
@@ -85,7 +108,9 @@ const privacySections: Section[] = [
     title: "Third-Party Services",
     content: [
       "PhotoPrism: PhotoSpectra connects to PhotoPrism servers that you configure. We do not control these servers or their privacy practices. Please review the privacy policy of your PhotoPrism server administrator.",
-      "No Other Third Parties: PhotoSpectra does not integrate with any other third-party services, analytics platforms, or advertising networks.",
+      "Google AdMob (free version only): We use Google AdMob to display non-personalized banner ads in the free version of the app. AdMob may collect limited technical data for fraud prevention and aggregate reporting. See Google's Privacy Policy for details.",
+      "Apple App Store / Google Play (subscriptions): If you subscribe to remove ads, the transaction is processed entirely by Apple or Google. We do not handle or store any payment data.",
+      "No Other Third Parties: PhotoSpectra does not integrate with any analytics platforms, crash reporting services, or other advertising networks.",
     ],
   },
 ];
@@ -123,7 +148,7 @@ export default function Privacy(): ReactNode {
               Privacy Policy
             </Heading>
             <p className={styles.lastUpdated}>
-              Last Updated: February 28, 2026
+              Last Updated: April 8, 2026
             </p>
             <p className={styles.pageSubtitle}>
               PhotoSpectra is committed to protecting your privacy. This Privacy
@@ -190,6 +215,20 @@ export default function Privacy(): ReactNode {
                 </div>
                 <div className={styles.summaryItem}>
                   <span className={styles.summaryNumber}>4</span>
+                  <p>
+                    The free version shows non-personalized ads via Google AdMob
+                    — no behavioral tracking or targeting
+                  </p>
+                </div>
+                <div className={styles.summaryItem}>
+                  <span className={styles.summaryNumber}>5</span>
+                  <p>
+                    You can remove ads with a subscription — we never see your
+                    payment details, and ads resume if you cancel
+                  </p>
+                </div>
+                <div className={styles.summaryItem}>
+                  <span className={styles.summaryNumber}>6</span>
                   <p>You have complete control over your data</p>
                 </div>
               

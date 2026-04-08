@@ -80,16 +80,17 @@ const roadmapPhases: Phase[] = [
   {
     phase: "Phase 3",
     title: "Enhanced Organization",
-    status: "planned",
+    status: "in-progress",
     items: [
       {
         title: "Organization Tools",
         items: [
-          "Places, people and labels support",
-          "WebDav upload subdirectories formats (by date, by album)",
-          "Library functionalities",
           "Share photos",
           "Collections filters and editing",
+          "Subscriptions",
+          "Library functionalities",
+          "WebDav upload subdirectories formats (by date, by album)",
+          "Places, people and labels support",
         ],
       },
     ],
@@ -105,6 +106,7 @@ const roadmapPhases: Phase[] = [
           "Search Functionality: Search photos by metadata, date, or location",
           "Photo Editing: Basic editing tools (crop, rotate, filters)",
           "Slideshow Creator: Create slideshows from albums",
+          "Websocket"
         ],
       },
     ],
@@ -188,7 +190,7 @@ export default function Roadmap(): ReactNode {
         <main className={styles.mainContent}>
           <div className="container">
             <div className={styles.timeline}>
-              {roadmapPhases.map((phase, idx) => (
+              {roadmapPhases.reverse().map((phase, idx) => (
                 <PhaseSection key={idx} {...phase} />
               ))}
             </div>
