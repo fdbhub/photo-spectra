@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkphoto_spectra=globalThis.webpackChunkphoto_spectra||[]).push([[235],{8552(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
